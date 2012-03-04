@@ -1,0 +1,40 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {showCLIPSHomePage = id; showPreferencePanel = id; }; 
+            CLASS = AppController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {loadBatch = id; loadConstructs = id; newEnvironment = id; }; 
+            CLASS = EnvController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {environmentArrayController = NSArrayController; environmentMenu = NSMenu; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                changeEditorFont = id; 
+                doApply = id; 
+                doCancel = id; 
+                doOK = id; 
+                watchAll = id; 
+                watchNone = id; 
+            }; 
+            CLASS = PreferenceController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {panel = id; }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            ACTIONS = {showPanel = id; }; 
+            CLASS = Preferences; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {panel = NSPanel; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}
